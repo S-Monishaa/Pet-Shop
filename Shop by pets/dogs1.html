@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+   
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+
+
+/* Style the counter cards */
+
+.card {
+ width: 290px;
+ height: 354px;
+ background: #4d009a;
+ border-radius: 15px;
+ box-shadow: 1px 5px 60px 0px #100a886b;
+}
+
+.card .card-border-top {
+ width: 60%;
+ height: 3%;
+ background: #d9b0f3;
+ margin: auto;
+ border-radius: 0px 0px 15px 15px;
+}
+
+.card span {
+ font-weight: 600;
+ color: rgb(253, 253, 253);
+ text-align: center;
+ display: block;
+ padding-top: 10px;
+ font-size: 16px;
+}
+
+.card .job {
+ font-weight: 400;
+ color: white;
+ display: block;
+ text-align: center;
+ padding-top: 3px;
+ font-size: 12px;
+}
+
+.card .img {
+ width: 150px;
+ height: 150px;
+ background: #c164f3;
+ border-radius: 15px;
+ margin: auto;
+ margin-top: 25px;
+}
+
+.card button {
+ padding: 8px 25px;
+ display: block;
+ margin: auto;
+ border-radius: 8px;
+ border: none;
+ margin-top: 30px;
+ background: #c364f3;
+ color: white;
+ font-weight: 600;
+}
+
+.card button:hover {
+ background: #914bf3;
+}
+
+ul.search-container input{
+    float: right
+}
+
+ul {
+  list-style-type: none;  
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+li {float: left;}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+</style>
+</head>
+<body>
+  <div>
+            
+    <ul>
+      <li><a href="file:///D:/Pet%20shop/home/home.html">Home</a></li>
+      <li><a href="file:///D:/Pet%20shop/about%20us/about%20us-1.html">About Us</a><li>
+      <li><a href="file:///D:/Pet%20shop/Shop%20by%20pets/dogs1.html">Dogs</a></li>
+      <li><a href="file:///D:/Pet%20shop/Shop%20by%20pets/cats.html">Cats</a></li>
+      <li><a href="file:///D:/Pet%20shop/blog/blog.html">Blog</a></li>
+        
+        <div class="search-container">
+            <form action="/action_page.php">
+              <input type="text" placeholder="Search.." name="search">
+            </form>
+        </div>    
+    </ul>
+        <br>
+        <!-- <img src="banner1.png" width="100%" height="20%"> -->
+    </div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+        <div class="card-border-top">
+        </div>
+        <div class="img">
+            <img src="dog.jpg" width="150px" height="150px">
+        </div>
+        <span> Name</span>
+        <p class="job"> dkjb</p>
+        <button> Click
+        </button>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <div class="card-border-top">
+        </div>
+        <div class="img">
+            <img src="dogs1.jpg" width="150px" height="150px">
+        </div>
+        <span> Name</span>
+        <p class="job"> dkjb</p>
+        <button> Click
+        </button>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <div class="card-border-top">
+        </div>
+        <div class="img">
+            <img src="dogs2.jpg" width="150px" height="150px">
+        </div>
+        <span> Name</span>
+        <p class="job"> dkjb</p>
+        <button> Click
+        </button>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+        <div class="card-border-top">
+        </div>
+        <div class="img">
+            <img src="dogs3.jpg" width="150px" height="150px">
+        </div>
+        <span> Name</span>
+        <p class="job"> dkjb</p>
+        <button> Click
+        </button>
+    </div>
+  </div>
+</div>
+
+<br>
+<br>
+<hr>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <div class="card-border-top">
+                
+            </div>
+            <div class="img">
+                <img src="dogs4.jpg" width="150px" height="150px">
+            </div>
+            <span> Name</span>
+        <p class="job"> dkjb</p>
+        <button> Click
+        </button>
+        </div>
+    </div>
+
+
+
+    <div class="column">
+      <div class="card">
+          <div class="card-border-top">
+              
+          </div>
+          <div class="img">
+              <img src="dogs5.jpg" width="150px" height="150px">
+          </div>
+          <span> Name</span>
+        <p class="job"> dkjb</p>
+        <button> Click
+        </button>
+      </div>
+  </div>
+
+
+  <div class="column">
+    <div class="card">
+        <div class="card-border-top">
+            
+        </div>
+        <div class="img">
+            <img src="dogs6.jpg" width="150px" height="150px">
+        </div>
+        <span> Name</span>
+        <p class="job"> dkjb</p>
+        <button> Click
+        </button>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <div class="card-border-top">
+            
+        </div>
+        <div class="img">
+            <img src="dogs7.jpg" width="150px" height="150px" >
+        </div>
+        <span> Name</span>
+        <p class="job"> dkjb</p>
+        <button> Click
+        </button>
+    </div>
+</div>
+
+
+</div>
+
+</body>
+</html>
