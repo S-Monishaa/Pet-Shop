@@ -1,0 +1,70 @@
+<html>
+    <style>
+        body{
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 800px;
+            margin: 0;
+            background-image: url("https://icons.iconarchive.com/icons/iconarchive/cute-animal/512/Cute-Dog-icon.png"),url("https://cdn-icons-png.flaticon.com/128/1291/1291961.png");
+                              
+            background-repeat: no-repeat;
+            background-size: 3cm, 1cm;
+            background-position: 20% 14%, 80% 50%;
+            
+        }
+        .login-container{
+            background-color: #fff;
+            padding:20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width:50%
+        }    
+        .login-container h2 {
+        text-align: center;
+        color: #333;
+        }
+        .login-container p{
+            text-align: center;
+        }
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: calc(100% - 20px);
+        }
+
+        .login-container input[type="submit"]{
+            width:100%;
+            padding:10px;
+            margin-top: 10px;
+            background-color: #007bff;
+            border:none;
+            color:#fff;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .login-container input[type="submit"]:hover {
+        background-color: #0056b3;
+        }
+        
+    </style>
+
+    <body>
+
+        <div class="login-container">
+            <h2>Login Form</h2>
+            <form action="#">
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <input type="submit" value="Login">
+            </form>
+            <p>Dont have an account <a>create</a><p>
+        </div>
+        
+        </body>
+</html>
