@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+ul {
+  list-style-type: none;  
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: 10px;
+  text-align: center;
+  font-family: arial;
+  float: left;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  padding: 0 5px;
+}
+
+.row {
+  margin: 0 -4px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.search-container {
+  float: right;
+}
+
+.search-container input {
+  padding: 5px;
+  font-size: 17px;
+  border: none;
+}
+
+.left-nav {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background-color: #f2cee9;
+}
+
+.left-nav h3 {
+  text-align: left;
+  padding: 10px 0;
+}
+
+.left-nav a {
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+
+.left-nav a:hover {
+  background-color: #ddd;
+}
+
+.main-content {
+  margin-left: 22%;
+  padding: 10px;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-section h3 {
+  margin-bottom: 10px;
+}
+
+.filter-section label {
+  margin-right: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<div>
+  <ul>
+    <li><a href="file:///D:/Pet%20shop/home/home.html">Home</a></li>
+    <li><a href="file:///D:/Pet%20shop/about%20us/about%20us-1.html">About Us</a><li>
+    <li><a href="file:///D:/Pet%20shop/Shop%20by%20pets/dogs1.html">Dogs</a></li>
+    <li><a href="file:///D:/Pet%20shop/Shop%20by%20pets/cats.html">Cats</a></li>
+    <li><a href="file:///D:/Pet%20shop/blog/blog.html">Blog</a></li>
+    <div class="search-container">
+      <form action="/action_page.php">
+        <input type="text" placeholder="Search.." name="search">
+      </form>
+    </div>    
+  </ul>
+  
+</div>
+
+<div class="left-nav">
+  <h3>Categories</h3>
+  <a href="file:///D:/Pet%20shop/Shop%20by%20pets/cats.html">Cats</a>
+  <a href="file:///D:/Pet%20shop/Shop%20by%20pets/dogs1.html">Dogs</a>
+  <a href="file:///D:/Pet%20shop/Shop%20by%20pets/bird.html">Birds</a>
+  <a href="file:///D:/Pet%20shop/Shop%20by%20pets/fish.html">Fish</a>
+  <a href="file:///D:/Pet%20shop/Shop%20by%20pets/ham.html">Hamster</a>
+  
+  <h3>Products</h3>
+  <a href="file:///D:/Pet%20shop/pop%20categ/CatFood.html">Cat Food</a>
+  <a href="file:///D:/Pet%20shop/pop%20categ/DogFood.html">Dog Food</a>
+  <a href="file:///D:/Pet%20shop/pop%20categ/toys.html">Toys</a>
+  <a href="file:///D:/Pet%20shop/pop%20categ/petshop%20cloths-1.html">Clothes</a>
+  <a href="file:///D:/Pet%20shop/pop%20categ/beds.html">Beds & Mats</a>
+  <a href="file:///D:/Pet%20shop/pop%20categ/feeders.html">Feeders</a>
+  <a href="file:///D:/Pet%20shop/pop%20categ/CollarAndLeashes.html">Walking Essentials</a>
+  <a href="file:///D:/Pet%20shop/products/accessories.html">Accessories</a>
+  <a href="file:///D:/Pet%20shop/pop%20categ/grooming.html">Grooming</a>
+  
+  <h3>Filters</h3>
+  <div class="filter-section">
+    <h3>Colors</h3>
+    <label><input type="checkbox" class="filter color" value="pink"> Pink</label>
+    <label><input type="checkbox" class="filter color" value="blue"> Blue</label>
+    <label><input type="checkbox" class="filter color" value="red"> Red</label>
+  </div>
+  <div class="filter-section">
+    <h3>Price Range</h3>
+    <label><input type="checkbox" class="filter price" value="0-300"> 0-300</label>
+    <label><input type="checkbox" class="filter price" value="301-600"> 301-600</label>
+    <label><input type="checkbox" class="filter price" value="601-900"> 601-900</label>
+  </div>
+</div>
+
+<div class="main-content">
+  <div class="row" id="product-container">
+    <div class="column card" data-color="pink" data-price="600">
+      <img src="cat-accset-pink.jpg" alt="De" style="width:100%">
+      <h1>Tailored Jeans</h1>
+      <p class="price">RS 600</p>
+      <p>1pc Heart </p>
+      <p><button>Add to Cart</button></p>
+    </div>
+    
+    <div class="column card" data-color="pink" data-price="300">
+      <img src="cat-toy-blue.jpg" alt="Denim Jeans" style="width:100%">
+      <h1>pinkest love</h1>
+      <p class="price">RS300</p>
+      <p>overcoat for dogs and cats.</p>
+      <p><button>Add to Cart</button></p>
+    </div>  
+
+    <div class="column card" data-color="pink" data-price="500">
+      <img src="dog-beany-black.jpg" alt="Denim Jeans" style="width:100%">
+      <h1>pinkest love</h1>
+      <p class="price">RS500</p>
+      <p>overcoat for dogs and cats.</p>
+      <p><button>Add to Cart</button></p>
+    </div>  
+
+    <div class="column card" data-color="plaid" data-price="599">
+      <img src="dog-glass-white.jpg" alt="Denim Jeans" style="width:100%">
+      <h1>sweater</h1>
+      <p class="price">RS 599</p>
+      <p>plaid print sweater for dogs and cats.</p>
+      <p><button>Add to Cart</button></p>
+    </div> 
+
+    <div class="column card" data-color="plaid" data-price="599">
+      <img src="dog-hat-blue.jpg" alt="Denim Jeans" style="width:100%">
+      <h1>sweater</h1>
+      <p class="price">RS 599</p>
+      <p>plaid print sweater for dogs and cats.</p>
+      <p><button>Add to Cart</button></p>
+    </div>  
+
+    <div class="column card" data-color="plaid" data-price="599">
+      <img src="dog-ribbon-pink.jpg" alt="Denim Jeans" style="width:100%">
+      <h1>sweater</h1>
+      <p class="price">RS 599</p>
+      <p>plaid print sweater for dogs and cats.</p>
+      <p><button>Add to Cart</button></p>
+    </div>  
+
+    <div class="column card" data-color="plaid" data-price="700">
+      <img src="cat-cap-purple.jpg" alt="Denim Jeans" style="width:100%">
+      <h1>sweater</h1>
+      <p class="price">RS 700</p>
+      <p>plaid print sweater for dogs and cats.</p>
+      <p><button>Add to Cart</button></p>
+    </div>  
+
+    <div class="column card" data-color="plaid" data-price="700">
+      <img src="bird-acc-pink.jpg" alt="Denim Jeans" style="width:100%">
+      <h1>sweater</h1>
+      <p class="price">RS 700</p>
+      <p>plaid print sweater for dogs and cats.</p>
+      <p><button>Add to Cart</button></p>
+    </div>
+
+    <div class="column card" data-color="plaid" data-price="700">
+        <img src="bird-hat-blue.jpg" alt="Denim Jeans" style="width:100%">
+        <h1>sweater</h1>
+        <p class="price">RS 700</p>
+        <p>plaid print sweater for dogs and cats.</p>
+        <p><button>Add to Cart</button></p>
+      </div>
+  </div>
+</div>
