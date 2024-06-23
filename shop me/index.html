@@ -263,3 +263,30 @@ li a {
       </div>
   </div>
 </div>
+
+<script>
+    document.querySelectorAll('.filter'.forEach(element => {
+        filter.addEventListener('change',function(){
+            const selectedColors= Array.from(document.querySelectorAll('.filter.color:checked')).map(checkbox=>checkbox.value);
+            const selectedPrices= Array.from(document.querySelectorAll('.filter.price:checked')).map(checkbox=>checkbox.value);
+
+            document.querySelector('.card').forEach(card=> {
+                const cardColor = card.getAttribute('data-color');
+                const cardPrice = pareseInt(card.getAttribute('data-price'));
+
+                const colorMatch = selectedColors.length === 0 || selectedColors.includes(cardColor);
+                const priceMatch = selectedPrices.length === 0 || selectedPrices.some(range => {
+                    const [min, max] = range.split('-').map(Number);
+                    return cardPrice >= min && cardPrice <= max;
+                });
+
+                if (colorMatch && priceMatch) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+        
+    }));
+</script>
